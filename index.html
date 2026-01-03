@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Cloche - Restaurant & Café-Bar | Cuisine Béninoise & Européenne</title>
+    <meta name="description" content="Découvrez un lieu chaleureux où la bonne cuisine béninoise rencontre un service attentionné. Spécialités africaines et européennes à Paris.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-name">La Cloche</span>
+                <span class="brand-subtitle">Café-Bar Restaurant</span>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link">Accueil</a>
+                <a href="#menu" class="nav-link">La Carte</a>
+                <a href="#gallery" class="nav-link">Galerie</a>
+                <a href="#features" class="nav-link">Spécialités</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="tel:0160610404" class="nav-phone-btn">
+                    <i class="fas fa-phone"></i>
+                    01 60 61 04 04
+                </a>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#home" class="mobile-link">Accueil</a>
+            <a href="#menu" class="mobile-link">La Carte</a>
+            <a href="#gallery" class="mobile-link">Galerie</a>
+            <a href="#features" class="mobile-link">Spécialités</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <a href="tel:0160610404" class="mobile-phone-btn">
+                RÉSERVER : 01 60 61 04 04
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle">Gastronomie Béninoise & Européenne</p>
+            <h1 class="hero-title">La Cloche</h1>
+            <p class="hero-tagline">L'Excellence Culinaire & Ambiance Conviviale</p>
+            <div class="hero-divider"></div>
+            <p class="hero-description">
+                Découvrez notre célèbre <strong>Pintade Braisée</strong> et nos plats de grand-mère authentiques : 
+                <em class="gold-text"> Crincrin, Asrokaoun & Bonnyo</em>.
+            </p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Consulter la Carte</a>
+                <a href="tel:0160610404" class="btn btn-secondary">Réserver une Table</a>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="feature-title">Spécialités</h3>
+                    <p class="feature-description">
+                        Pintade braisée, Crincrin et plats authentiques béninois cuisinés avec passion.
+                    </p>
+                    <a href="#menu" class="feature-link">Découvrir</a>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="feature-title">Engagement</h3>
+                    <p class="feature-description">
+                        Une institution gastronomique reconnue pour son service attentionné et sa propreté exemplaire.
+                    </p>
+                    <a href="#about" class="feature-link">Découvrir</a>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="feature-title">Ambassadeur</h3>
+                    <p class="feature-description">
+                        Approuvé par Honoré Perscadors et nos nombreux clients fidèles à travers l'Afrique.
+                    </p>
+                    <a href="#avis" class="feature-link">Découvrir</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Notre Galerie</h2>
+                <p class="section-subtitle">Découvrez l'ambiance de notre restaurant et nos spécialités culinaires</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Les images seront chargées dynamiquement -->
+            </div>
+            
+            <div class="gallery-counter">
+                <span id="currentImage">1</span> / <span id="totalImages">10</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">La Carte</h2>
+                <p class="section-subtitle">Découvrez nos spécialités béninoises et européennes</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="menu-tabs" id="menuTabs">
+                <button class="menu-tab active" data-category="grand-mere">Plats de Grand-mère</button>
+                <button class="menu-tab" data-category="petit-dejeuner">Petit Déjeuner</button>
+                <button class="menu-tab" data-category="entrees">Entrées & Salades</button>
+                <button class="menu-tab" data-category="pizzas">Pizzas</button>
+                <button class="menu-tab" data-category="viandes">Volailles & Viandes</button>
+                <button class="menu-tab" data-category="poissons">Poissons</button>
+                <button class="menu-tab" data-category="cocktails">Cocktails & Boissons</button>
+            </div>
+            
+            <div class="menu-items" id="menuItems">
+                <!-- Les plats seront chargés dynamiquement par JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- About & Socials -->
+                <div class="footer-column">
+                    <div class="footer-brand">
+                        <span class="footer-brand-name">La Cloche</span>
+                        <span class="footer-brand-subtitle">Café-Bar Restaurant</span>
+                    </div>
+                    <p class="footer-description">
+                        Découvrez un lieu chaleureux où la bonne cuisine béninoise rencontre un service attentionné. 
+                        Ambiance conviviale et propre. Idéal pour vos déjeuners, anniversaires et repas d'affaires.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/people/Restaurant-La-Cloche/61578791916814/" target="_blank" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="footer-services">
+                        <div class="service-tag">
+                            <i class="fas fa-shopping-bag"></i>
+                            À EMPORTER
+                        </div>
+                        <div class="service-tag">
+                            <i class="fas fa-truck"></i>
+                            LIVRAISON
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Info & Contact -->
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Contact</h4>
+                    <ul class="footer-contact-list">
+                        <li class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Contactez-nous pour connaître notre adresse exacte et nos points de livraison.</span>
+                        </li>
+                        <li class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:0160610404">01 60 61 04 04</a>
+                        </li>
+                        <li class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:Restaulacloche@gmail.com">Restaulacloche@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Services & Ambassadeur -->
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Notre Ambassadeur</h4>
+                    <div class="ambassador-card">
+                        <p class="ambassador-quote">
+                            "Je me régale avec cette bonne nourriture ! On vous attend pour la fête."
+                        </p>
+                        <p class="ambassador-name">- Honoré Perscadors</p>
+                    </div>
+                    <div class="payment-methods">
+                        <h5 class="payment-title">Moyens de paiement</h5>
+                        <div class="payment-tags">
+                            <span class="payment-tag">ESPÈCES</span>
+                            <span class="payment-tag">CARTE BLEUE</span>
+                            <span class="payment-tag">TICKETS RESTO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                &copy; <span id="currentYear"></span> Restaurant La Cloche. Tous droits réservés.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <button class="lightbox-nav lightbox-prev" id="lightboxPrev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="lightbox-nav lightbox-next" id="lightboxNext">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <img class="lightbox-image" id="lightboxImage" src="" alt="">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
